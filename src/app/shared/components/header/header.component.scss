@@ -1,0 +1,17 @@
+.header {
+  @apply tw-sticky tw-top-0 tw-w-full tw-h-[60px] tw-bg-lime-900 tw-text-white tw-text-2xl tw-box-border tw-px-6;
+}
+
+tui-icon{
+  @apply tw-h-4;
+}
+
+[tuiButton] {
+  color: white;
+}
+
+.drawer {
+  top: 0;
+  border-radius: 0;
+  inline-size: 20rem;
+}
