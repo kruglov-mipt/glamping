@@ -5,3 +5,7 @@
 tui-root {
   @apply tw-h-full;
 }
+
+.content {
+  @apply tw-col-start-2 tw-col-span-10;
+}

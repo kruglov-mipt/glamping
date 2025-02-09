@@ -1,0 +1,21 @@
+<div tuiCardLarge tuiAppearance="floating">
+  <div tuiHeader>
+    <h2 tuiTitle>Введите Ваши данные</h2>
+  </div>
+  <form [formGroup]="testForm">
+    <div class="tw-grid tw-grid-cols-3 tw-gap-5">
+      <tui-input formControlName="name">
+        Имя
+        <input tuiTextfieldLegacy />
+      </tui-input>
+      <tui-input formControlName="surname">
+        Фамилия
+        <input tuiTextfieldLegacy />
+      </tui-input>
+      <tui-input-phone formControlName="phone">
+        Телефон
+        <input autocomplete="tel" tuiTextfieldLegacy />
+      </tui-input-phone>
+    </div>
+  </form>
+</div>

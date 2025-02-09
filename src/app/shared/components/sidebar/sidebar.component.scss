@@ -1,3 +1,11 @@
 .header {
-    position: sticky;
+    @apply tw-sticky;
+}
+
+.close {
+    @apply tw-text-black;
+}
+
+.link {
+    @apply tw-text-2xl tw-text-[#0a4500] hover:tw-text-[#4c9141] tw-no-underline;
 }

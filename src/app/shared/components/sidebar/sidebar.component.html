@@ -1,1 +1,17 @@
-<p>sidebar works!</p>
+<div class="tw-flex tw-items-center tw-justify-between tw-mb-5">
+  <div class="tw-text-2xl">Kruglamp</div>
+  <button
+    (click)="onClose()"
+    class="close"
+    size="m"
+    appearance="flat"
+    tuiButton
+  >
+    <tui-icon icon="@tui.x" />
+  </button>
+</div>
+<div class="tw-flex tw-flex-col tw-gap-y-5">
+  @for (link of links; track link.name) {
+    <a class="link" href="{{ link.href }}"> {{ link.name }} </a>
+  }
+</div>

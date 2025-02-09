@@ -1,5 +1,5 @@
 <div class="header tw-flex tw-items-center tw-justify-between">
-  <div>Kruglamp</div>
+  <div class="tw-cursor-pointer" (click)="navigate()">Kruglamp</div>
   <div>Костромская область, д. Конищево</div>
   <div>89101960000</div>
   <button (click)="open.set(true)" size="m" appearance="flat" tuiButton>
@@ -10,10 +10,10 @@
 
 <tui-drawer
   *tuiPopup="open()"
-  direction="left"
+  direction="right"
   class="drawer"
   [overlay]="true"
   (click.self)="onClose()"
 >
-  <app-sidebar></app-sidebar>
+  <app-sidebar (sidebarClosed)="open.set(false)"></app-sidebar>
 </tui-drawer>
